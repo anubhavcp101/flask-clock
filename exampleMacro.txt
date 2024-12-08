@@ -1,0 +1,6 @@
+
+{% macro foo(data) %}
+    {% for row in data %}
+        {{row.name }} is a {{row.type}} game
+    {% endfor %}
+{% endmacro %}

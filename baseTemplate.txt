@@ -1,0 +1,7 @@
+The Title - {% block title%} {% endblock %}
+Right now, dark energy is just the name that astronomers gave to the mysterious "something" that is causing the
+ universe to expand at an accelerated rate.
+{% block startingPara%} {%endblock startingPara%}
+{% block moreContent%} {% endblock moreContent%}
+{% block conclusion %} {% endblock conclusion%}
+{% include 'includingTemplate.txt' with context %} 

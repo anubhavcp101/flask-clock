@@ -1,0 +1,52 @@
+{% raw %}
+-------------------------------------------------
+White Spaces in Jinja2 
+========================
+You can also strip whitespace in templates by hand. If you add a minus sign (-) to the start or end of a block (e.g. a For tag), a comment, or a variable expression, the whitespaces before or after that block will be removed:
+
+{% for item in seq -%}
+    {{ item }}
+{%- endfor %}
+This will yield all elements without whitespace between them. If seq was a list of numbers from 1 to 9, the output would be 123456789.
+
+If Line Statements are enabled, they strip leading whitespace automatically up to the beginning of the line.
+
+By default, Jinja also removes trailing newlines. To keep single trailing newlines, configure Jinja to keep_trailing_newline.
+
+Note
+You must not add whitespace between the tag and the minus sign.
+
+valid:
+
+{%- if foo -%}...{% endif %}
+invalid:
+
+{% - if foo - %}...{% endif %}
+{# include in jinja2 docs https://jinja.palletsprojects.com/en/stable/templates/#include #}
+------------------------------------------------------------------------
+{% endraw %}
+For jypter notenook,
+
+Cell Magic Commands:
+
+    %%timeit: Measures the execution time of a code cell.
+    %%writefile: As mentioned, writes the cell's output to a file.
+    %%bash: Executes Bash shell commands.
+    %%javascript: Executes JavaScript code.
+    %%html: Renders HTML directly in the output cell.
+    %%latex: Renders LaTeX equations.
+
+Line Magic Commands (prefixed with %):
+
+    %run: Executes a Python script.
+    %load: Loads code from a file into a cell.
+    %cd: Changes the working directory.
+    %ls: Lists files in the current directory.
+    %who: Lists defined variables.
+    %whos: Lists defined variables with more details.
+    %matplotlib inline: Sets up matplotlib to plot inline.
+
+To explore all available magic commands, you can use:
+Python
+
+%lsmagic

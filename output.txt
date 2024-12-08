@@ -1,0 +1,8 @@
+total 28
+drwxrwxrwx 1 yashwant yashwant  4096 Dec  7 10:41 .
+drwxrwxrwx 1 yashwant yashwant  4096 Dec  6 23:35 ..
+drwxrwxrwx 1 yashwant yashwant  4096 Dec  7 10:24 .ipynb_checkpoints
+drwxrwxrwx 1 yashwant yashwant  4096 Dec  6 23:39 .venv
+-rwxrwxrwx 1 yashwant yashwant 16527 Dec  7 04:03 NewNotebook.ipynb
+-rwxrwxrwx 1 yashwant yashwant  5654 Dec  7 10:40 Untitled.ipynb
+-rwxrwxrwx 1 yashwant yashwant     0 Dec  7 10:41 output.txt

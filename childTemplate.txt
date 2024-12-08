@@ -1,0 +1,16 @@
+{% extends "baseTemplate.txt" %}
+{% block title %}
+What is Dark Energy
+{% endblock title %}
+{% block startingPara %}
+Dark energy has been described by some as having the effect of a negative pressure that is pushing space outward. However, we don't know if dark energy has the effect of any type of force at all. There are many ideas floating around about what dark energy could possibly be. Here are four leading explanations for dark energy. Keep in mind that it's possible it's something else entirely.
+{% endblock startingPara %}
+{% block moreContent %}
+Some scientists think that dark energy is a fundamental, ever-present background energy in space known as vacuum energy, which could be equal to the cosmological constant, a mathematical term in the equations of Einstein's theory of general relativity. Originally, the constant existed to counterbalance gravity, resulting in a static universe. But when Hubble confirmed that the universe was actually expanding, Einstein removed the constant, calling it “my biggest blunder,” according to physicist George Gamow.
+{% endblock moreContent %}
+{% block conclusion %}
+While this theory has been a popular topic of discussion, scientists investigating this option have calculated how much vacuum energy there should theoretically be in space. They showed that there should either be so much vacuum energy that, at the very beginning, the universe would have expanded outwards so quickly and with so much force that no stars or galaxies could have formed, or… there should be absolutely none. This means that the amount of vacuum energy in the cosmos must be much smaller than it is in these predictions. However, this discrepancy has yet to be solved and has even earned the moniker "the cosmological constant problem."
+{#  {% include 'includingTemplate.txt' with context %} #}
+{% endblock conclusion %}
+{# include tag in jinja2 docs https://jinja.palletsprojects.com/en/stable/templates/#include #}
+{# Don't use include jinja tag in child template rather use in base template and in case you need in child Template then put it in inside some block #}

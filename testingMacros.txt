@@ -1,0 +1,4 @@
+
+{# Macros Testing #}
+{% import 'exampleMacro.txt' as exampleMacro with context %}
+{{ exampleMacro.foo(data) }}
